@@ -3,7 +3,7 @@
 export type CommandType = {|
 	name: string,
 	url: string,
-	searchurl ?: string,
+	searchurl?: string,
 |};
 
 export type CommandNames = 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'chai' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
