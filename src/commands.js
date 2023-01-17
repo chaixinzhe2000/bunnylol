@@ -7,7 +7,7 @@ export type CommandType = {|
 |};
 
 export type CommandNames = 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'chai' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
-	'c' | 'wf' | '$' | 'cal' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'DEFAULT' | 'ins' | 'ask' | 'fdc' | 'b';
+	'c' | 'wf' | '$' | 'cal' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'DEFAULT' | 'ins' | 'ask' | 'fdc' | 'b' | 'mc' | 'cab';
 
 export type CommandDataTableType = {|
 	name: string,
@@ -123,6 +123,14 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 		name: "Team Blind",
 		url: "https://www.teamblind.com/",
 		searchurl: "https://www.teamblind.com/search/"
+	},
+	mc: {
+		name: "Meta Careers | Personal Dashboard",
+		url: "https://www.metacareers.com/profile/home",
+	},
+	cab: {
+		name: "Courses @ Brown",
+		url: "https://cab.brown.edu/",
 	},
 	DEFAULT: {
 		name: "Default - Google Search",
