@@ -117,7 +117,7 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 	},
 	todo: {
 		name: "Add to Todoist",
-		url: "https://todoist.com/app/today",
+		url: "https://todoist.com/app/project/2243061548",
 		searchurl: "https://todo.xchai.me/add?todo="
 	},
 	b: {
@@ -139,3 +139,5 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 		searchurl: "https://www.google.com/search?q="
 	}
 };
+
+
