@@ -2,23 +2,23 @@
 
 export type CommandType = {|
 	name: string,
-		url: string,
-			searchurl ?: string,
+	url: string,
+	searchurl ?: string,
 |};
 
 export type CommandNames = 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'chai' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
-	'c' | 'wf' | '$' | 'cal' | 'uvacovid' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'DEFAULT' | 'ins';
+	'c' | 'wf' | '$' | 'cal' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'DEFAULT' | 'ins' | 'ask' | 'fdc' | 'b';
 
 export type CommandDataTableType = {|
 	name: string,
-		url: string,
-			command: CommandNames
-				|};
+	url: string,
+	command: CommandNames
+|};
 
 export type ColumnDataTableType = {|
 	data: string,
-		title: string
-			|};
+	title: string
+|};
 
 export const COMMANDS: { [CommandNames]: CommandType } = {
 	fb: {
@@ -81,10 +81,6 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 		url: "https://google.com/",
 		searchurl: "https://www.google.com/search?q="
 	},
-	wp: {
-		name: "Washington Post",
-		url: "https://www.washingtonpost.com/regional/"
-	},
 	wsj: {
 		name: "Wall Street Journal",
 		url: "https://www.wsj.com/"
@@ -93,9 +89,9 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 		name: "CNN",
 		url: "https://www.cnn.com/"
 	},
-	tr: {
-		name: "HooHacks Trello Board",
-		url: "https://trello.com/b/GjKhtVPK/hoohacks"
+	ask: {
+		name: "ASK Dashboard | Brown University",
+		url: "https://ask.brown.edu"
 	},
 	n: {
 		name: "Netflix",
@@ -106,44 +102,13 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 		name: "Hulu",
 		url: "https://hulu.com/",
 	},
-	pv: {
-		name: "Amazon Prime Video",
-		url: "https://www.amazon.com/Amazon-Video/b/?&node=2858778011&ref=dvm_MLP_ROWNA_US_1",
-		searchurl: "https://www.amazon.com/s?i=instant-video&ref=nb_sb_noss_2&k="
-	},
-	p: {
-		name: "Piazza",
-		url: "https://piazza.com/class"
-	},
-	vs: {
-		name: "VS Code",
-		url: "vscode://",
-	},
-	wf: {
-		name: "Webflow",
-		url: "https://webflow.com/design/hoohacks"
-	},
-	hs: {
-		name: "Hubspot",
-		url: "https://app.hubspot.com/"
-	},
-	$: {
-		name: "Robinhood",
-		url: "https://robinhood.com/",
-		searchurl: "https://robinhood.com/stocks/"
-	},
-	c: {
-		name: "Robinhood Crypto",
-		url: "https://robinhood.com/",
-		searchurl: "https://robinhood.com/crypto/"
+	fdc: {
+		name: "Meta for Developers",
+		url: "https://developers.facebook.com/",
 	},
 	cal: {
 		name: "Google Calendar",
 		url: "https://calendar.google.com/calendar/r"
-	},
-	uvacovid: {
-		name: "UVA COVID-19 Tracker",
-		url: "https://returntogrounds.virginia.edu/covid-tracker"
 	},
 	wiki: {
 		name: "Wikipedia",
@@ -153,6 +118,11 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 	todo: {
 		name: "Microsoft To Do",
 		url: "https://to-do.live.com"
+	},
+	b: {
+		name: "Team Blind",
+		url: "https://www.teamblind.com/",
+		searchurl: "https://www.teamblind.com/search/"
 	},
 	DEFAULT: {
 		name: "Default - Google Search",
