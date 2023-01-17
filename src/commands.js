@@ -7,7 +7,7 @@ export type CommandType = {|
 |};
 
 export type CommandNames = 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'chai' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
-	'c' | 'wf' | '$' | 'cal' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'DEFAULT' | 'ins' | 'ask' | 'fdc' | 'b' | 'mc' | 'cab';
+	'c' | 'wf' | '$' | 'cal' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'DEFAULT' | 'ins' | 'ask' | 'dfc' | 'b' | 'mc' | 'cab';
 
 export type CommandDataTableType = {|
 	name: string,
@@ -102,7 +102,7 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 		name: "Hulu",
 		url: "https://hulu.com/",
 	},
-	fdc: {
+	dfc: {
 		name: "Meta for Developers",
 		url: "https://developers.facebook.com/",
 	},
