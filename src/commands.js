@@ -116,8 +116,9 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 		searchurl: "https://en.wikipedia.org/wiki/"
 	},
 	todo: {
-		name: "Microsoft To Do",
-		url: "https://to-do.live.com"
+		name: "Add to Todoist",
+		url: "https://todoist.com/app/today",
+		searchurl: "http://localhost:5001/add/"
 	},
 	b: {
 		name: "Team Blind",
