@@ -118,7 +118,7 @@ export const COMMANDS: { [CommandNames]: CommandType } = {
 	todo: {
 		name: "Add to Todoist",
 		url: "https://todoist.com/app/today",
-		searchurl: "http://localhost:5001/add/"
+		searchurl: "http://localhost:5001/add?todo="
 	},
 	b: {
 		name: "Team Blind",
