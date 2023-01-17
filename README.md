@@ -1,6 +1,4 @@
-# Rithik BunnyLOL
-
-While I was at Facebook, I heavily used the internally developed tool `bunnylol`. I found several other versions of `bunnylol` that required me to host a server. This version of `bunnylol` *does not* need to be hosted on a server.
+# Bunnylol Tool
 
 Currently, this is hosted on [https://rithik.me/bunnylol](https://rithik.me/bunnylol). However, you can host it on any website that you would like (even on GitHub Pages). Since this is going to be your primary search engine for every new tab you open, I would suggest that you don't host it somewhere that may take a while to spin up the static page (like Heroku where your VM could go to sleep).
 
